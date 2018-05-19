@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tipo de documento y paquetes
+\documentclass[10pt]{book}
+\usepackage{cdt/cdtProcesos}
+\usepackage{cdt/calmecac}
+\usepackage{subfigure}
+\usepackage{appendix}
+%\texttt{}
+\lstset{
+	basicstyle=\small\ttfamily, %footnotesize
+	language=Java, %C, csh, Java, HTML, XML, sh, SQL, Delphi, C, C++
+	keywordstyle=\color{blue},%
+	tabsize=3,%
+	frame=trBL,%
+	commentstyle=\it\ttfamily,%
+	numbers=left, numberstyle=\tiny,%
+	stringstyle=\color{red}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datos del proyecto
+    \sistema{Music Academy Course, Student and Service System}
+
+    \documento{C1-PR}{Documentación de Procesos TO-BE y Requerimientos del Sistema}{\DRAFT{\today}} %\RELEASE{1.0}
+    \fecha{\today}
+    \proyecto[MACAD]{Music Academy Course and Student System}
+    \organizacion{Organización Estudiantil para el Desarrollo de Proyectos}
+    \author{Cédula de Análisis de la OEDP}
+    \elaboro[OEDP]{Organización Estudiantil para el Desarrollo de Proyectos}
+    \entrega{Francisco Isidoro Mera Torres}
+     \aprobo[Product Owner]{Roger Schumann}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Presentación
+
+    \title{\varProyecto}
+    \subtitle {\varCveDocumento--\varDocumento}
+
+    \setImgPortada[0.7]{calmecacTheme/footer}
+    \setImgPleca[0.2]{calmecacTheme/footer}
+    \setImgHeader{calmecacTheme/logoPar}{calmecacTheme/logoInp}
+    \setImgLogo{calmecacTheme/headerInp}{calmecacTheme/headerPar}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Configuración
+
+    %=========================================================
+	% Para ocultar la información de control de cambios.
+	\hideControlVersion
+
+    %=========================================================
+    % Para desactivar las referencias cruzadas.
+  % \disablePersistence
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inicio del Documento
+\begin{document}
+
+    %=========================================================
+    % Portada
+    \thispagestyle{empty}
+    \maketitle
+
+    %=========================================================
+    % Hoja de revisión
+    \makeDocInfo
+    \bigskip\\
+    \makeObservaciones[3cm]
+    \vspace{2cm}
+    \makeFirmas
+
+    %=========================================================
+    % Indices del documento
+    \frontmatter
+    \tableofcontents
+    \listoffigures
+    \mainmatter
+    
+    
+    \chapter{Introducción}
+    \input{introduccion/introduccion}
+    
+    \chapter{Análisis de la Empresa}
+    \label{ch:analisis}
+    \input{analisis/analisis}
+    
+  	\chapter{Glosario de Términos}
+	\label{ch:glosario}
+	\input{negocio/glosario}
+	
+	\chapter{Procesos AS-IS}
+	\label{ch:procesosasis}	
+	\input{asis/asis}
+	
+	
+	\chapter{Procesos TO-BE}
+	\label{ch:procesostobe}
+
+	
+	\chapter{Requerimientos Funcionales}
+	\label{ch:reqFunc}
+	
+	\chapter{Requerimientos No Funcionales}	
+	\label{ch:reqNoFunc}
+	
+	\chapter{Criterio de Evaluación} 
+	\label{ch:criterio}
+	
+ 
+    \clossing
+    \cdtSaveData
+\end{document}

@@ -1,0 +1,10 @@
+*.log
+*.lof
+*.bbg
+*.toc
+*.aux
+*.out
+*.pdf
+.DS_Store
+*.synctex.gz
+*.csv

@@ -1,0 +1,11 @@
+integrado.aux
+integrado.lof
+integrado.log
+integrado.out
+integrado.synctex.gz
+integrado.tex.backup
+integrado.toc
+integrado.pdf
+integrado.bbl
+integrado.blg
+

@@ -1,0 +1,59 @@
+% !TEX root = ../integrado.tex
+
+
+\begin{Proceso}{PR01}{Ejecución de Trimestre}{La academia F.A.M.A. organiza sus actividades en periodos de tres meses. En un inicio el \refElem{Director} notifica a los alumnos de la escuela un fecha propuesta para el inicio de actividades. Una vez llegada la fecha los alumnos se presentan a la academia en donde el Director solicita los horarios de disponibilidad de cada uno y selecciona los cursos que se impartirán en el trimestre. En todo momento durante la ejecución del trimestre el \refElem{Administrador} busca a los alumnos para solicitar el pago correspondiente a su inscripción, ya sea por los cursos que los alumnos toman o por su carrera inscrita. Mientras se ejecuta el trimestre, el \refElem{Director} busca patrocinios de diferentes empresas y también solicita licencias a su proveedor \textit{Yamaha México} }{\Pfig[1]{asis/images/PR01-TrimestreASIS}{PR01}{Ejecución del Trimestre}}
+	
+	\PRitem{Participantes}{\begin{Titemize}
+		\Titem \refElem{Director}
+		\Titem \refElem{Administrador}
+		\Titem \refElem{Profesor}
+		\Titem \refElem{Alumno}
+		\Titem \refElem{Proveedor}
+	\end{Titemize}}	
+	\PRitem{Entradas}{\begin{Titemize}
+			\Titem Cursos(\refElem{tCurso}).
+			\Titem \refElem{tHorarioDeDisponibilidad}.
+			\Titem \refElem{tLicencia}.
+			\Titem \refElem{tPago}.
+			\Titem \refElem{tAsistencia}.
+		\end{Titemize}}
+	\PRitem{Salidas}{\begin{Titemize}
+		\Titem \refElem{tCertificado}.
+		\Titem \refElem{tApuntes}.
+		\Titem \refElem{tEvaluacion}. 
+	\end{Titemize}}
+
+\end{Proceso}
+
+
+\begin{PDescripcion}
+	\Ppaso[\EinicioTiempo] El proceso inicia cada tres meses. El \refElem{Director} notifica a los alumnos del inicio de un nuevo trimestre.
+	\Ppaso[\PSubProceso]\cdtLabelTask{SPR01}{Especificar fechas de nuevo trimestre} El \refElem{Director} planifica el inicio y fin de un nuevo trimestre. Continúa con la tarea \cdtRefTask{SPR02}{Dar inicio a trimestre}.
+	
+	\Ppaso[\PSubProceso]\cdtLabelTask{SPR02}{Dar inicio a trimestre} El \refElem{Director} cita a los alumnos a asistir el día de inicio de trimestre.
+	
+	\Ppaso[\iCompuerta] Una vez iniciado el trimestre se realizarán paralelamente las actividades \cdtRefTask{SPR03}{Cobrar a alumnos}, \cdtRefTask{SPR04}{Definir cursos y horarios}, \cdtRefTask{SPR07}{Buscar patrocinios} y \cdtRefTask{SPR08}{Solicitar Licencia}
+	
+	\Ppaso[\PSubProceso] \cdtLabelTask{SPR03}{Cobrar a alumnos} El \refElem{Administrador} a lo largo del trimestre solicitará el cobro por los cursos inscritos por el alumno en el trimestre.
+	
+	\Ppaso[\PSubProceso] \cdtLabelTask{SPR04}{Definir cursos y horarios} El \refElem{Director} durante una clase solicitará a los alumnos su \refElem{tHorarioDeDisponibilidad} para poder planificar el horario semanal de los cursos. Así mismo seleccionará los cursos que se ofertarán aleatoriamente o siguiendo la secuencia de los cursos ofertados el trimestre pasado. Continua con el sub proceso \cdtRefTask{SPR05}{Iniciar clases}.
+	
+	\Ppaso[\PSubProceso] \cdtLabelTask{SPR07}{Buscar patrocinios} El \refElem{Director} a lo largo del trimestre y de forma paralela buscará obtener patrocinios de diferentes empresas que puedan otorgar licencias estudiantiles o precios especiales de productos que puedan ser otorgadas a los alumnos. Esta tarea no tiene continuación.
+	
+	\Ppaso[\PSubProceso] \cdtLabelTask{SPR08}{Solicitar Licencia} El \refElem{Director} a lo largo del trimestre solicitará a su \refElem{Proveedor} un conjunto de licencias de software para los estudiantes. Está tarea no tiene continuación.
+	
+	\Ppaso[\PSubProceso] \cdtLabelTask{SPR05}{Iniciar Clases} El \refElem{Director} marca el inicio de las clases.
+	
+	\Ppaso[\iCompuerta] Una vez iniciadas las clases se llevarán a cabo las siguientes tareas en paralelo: \cdtRefTask{SPR06}{Dar Clase}, \cdtRefTask{SPR09}{Vigilar desempeño de profesores}.
+	
+	\Ppaso[\PSubProceso] \cdtLabelTask{SPR06}{Dar Clase} El \refElem{Profesor} le proporcionará apuntes a los alumnos inscritos en su curso por medio de la plataforma de Moodle o por medios escritos. Este evento sucederá hasta que los temas hayan sido cubiertos en su totalidad o al 80\%. Concluida este subproceso se continua con \cdtRefTask{SPR07}{Evaluar Alumnos}.
+	
+	\Ppaso[\PSubProceso] \cdtLabelTask{SPR07}{Evaluar Alumnos} El \refElem{Profesor} evalúa a los alumnos por medio de un examen escrito o utilizando la plataforma Moodle. El \refElem{Alumno} tiene derecho a presentar el examen dos veces.
+	
+	\Ppaso[\PSubProceso] \cdtLabelTask{SPR09}{Vigilar desempeño de profesores} El \refElem{Director} en conjunto con el \refElem{Administrador} desarrollan una prueba que los alumnos contestan para calificar el desempeño de los profesores.
+	
+	\Ppaso[\iCompuerta] Para continuar el flujo los subprocesos \cdtRefTask{SPR07}{Evaluar alumnos} y \cdtRefTask{SPR09}{Vigilar desempeño de profesores} deben terminar. El siguiente proceso a llevar a cabo es el \cdtRefTask{SPR10}{Generar Certificados}.
+	
+	\Ppaso[\PSubProceso]\cdtLabelTask{SPR10}{Generar Certificados} El 
+	
+\end{PDescripcion}
