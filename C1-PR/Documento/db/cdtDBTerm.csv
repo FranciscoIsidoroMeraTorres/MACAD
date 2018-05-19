@@ -1,1 +1,17 @@
 id,name
+tAlumno,Alumno
+tApuntes,Apuntes
+tAsistencia,Asistencia
+tBandaMusical,Banda Musical
+tCarrera,Carrera
+tCertificado,Certificado
+tCurso,Curso
+tEmpresa,Empresa
+tEvaluacion,Evaluaci\IeC {\'o}n
+tHorarioDeDisponibilidad,Horario de Disponibilidad
+tLicencia,Licencia
+tPago,Pago
+tProfesor,Profesor
+tServicioDeCapacitacion,Servicio de Capacitaci\IeC {\'o}n
+tServiciodeGrabacion,Servicio de Grabaci\IeC {\'o}n
+tStack,Stack de Tecnolog\IeC {\'\i }as

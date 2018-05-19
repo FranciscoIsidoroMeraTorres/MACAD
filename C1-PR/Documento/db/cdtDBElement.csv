@@ -1,1 +1,10 @@
 id,name
+{Director},Director
+{Administrador},Administrador
+{Profesor},Profesor
+{Alumno},Alumno
+{Musico},M\IeC {\'u}sico
+{BandaMusical},Banda Musical
+{Empresa},Empresa
+{Proveedor},Proveedor
+{PR01},PR01
