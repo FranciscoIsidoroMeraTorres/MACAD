@@ -8,6 +8,27 @@ Repositorio para el desarrollo del proyecto MACAD para la implementación de un 
   * Git
 entre otras cosas útiles para la implementación de este sistema.
 
+# Primeros pasos en GIT
+
+En esta sección se presenta los primeros comandos que permitirán que veas este reposotiro en tu directorio. Lo primero es aprender los comandos básicos de un sistema basado en Linux o derivado de POSIX.
+
+## Comandos
+
+```bash
+ pwd -> Comando que permite conocer el directorio en el que te encuentras.
+ cd  -> Comando para cambiar entre directorios.
+ mkdir -> Crea un nuevo directorio.
+ cp -> Copia el archivo especificado en el primer argumento al segundo argumento
+ sudo -> Comando para loggearse en la terminal como superusuario.(Al instalar el sistema operativo este te solicitará elegir está contraseña no se te debe olvidar).
+ sudo apt-get install -> Comando para instalar un programa o paquetes que se encuentran en repositorios internacionales o nacionales especificados en el archivo sources.list
+```
+
+### Instalar git y bajar el repositorio
+
+
+
+
+
 # C1-PR
 Documentación de:
   * Procesos ASIS
